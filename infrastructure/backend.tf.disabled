@@ -1,0 +1,16 @@
+# infrastructure/backend.tf.disabled
+#
+# IMPORTANT: Rename this file to `backend.tf` to enable remote state.
+#            You MUST update the values below to match your chosen environment.
+#
+# After renaming, run:
+#   terraform init -reconfigure
+
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "cms-hospital-rg-prod"          # Must match var.environment in main.tf
+    storage_account_name = "cmshospitalstorageprod"        # Must match var.environment in main.tf
+    container_name       = "tfstate"
+    key                  = "cms-hospital-fetcher.tfstate"
+  }
+}

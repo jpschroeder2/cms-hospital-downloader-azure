@@ -1,0 +1,25 @@
+# Virtual environments
+.venv/
+
+# VS Code settings
+.vscode/
+
+# Terraform
+infrastructure/.terraform/
+infrastructure/*.tfstate
+infrastructure/*.tfstate.backup
+infrastructure/terraform.tfvars
+
+# Azure Functions local files
+__blobstorage__/
+.python_packages/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+
+README.md

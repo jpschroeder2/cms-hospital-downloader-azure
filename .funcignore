@@ -1,0 +1,26 @@
+# Azure Functions deployment exclusions
+
+# Local configuration and secrets
+local.settings.json
+
+# Generated during deployment / runtime
+.python_packages/
+__pycache__/
+*.pyc
+*.pyo
+
+# Development / tooling
+.venv/
+.vscode/
+.git/
+.github/
+
+# Infrastructure as Code (should never be deployed)
+infrastructure/
+
+# Documentation and scripts
+README.md
+setup-oidc.sh
+
+# OS / temporary files
+.DS_Store

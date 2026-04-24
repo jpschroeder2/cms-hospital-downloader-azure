@@ -1,0 +1,10 @@
+# infrastructure/terraform.tfvars.example
+# Copy this file to terraform.tfvars and update the values below to match your own setup.
+
+location    = "eastus"
+environment = "prod"
+
+# === REQUIRED: Update these to match your GitHub repository ===
+# These values are used to create the OIDC federated credential.
+github_org  = "jpschroeder2"                  # Change to your GitHub username/org
+github_repo = "cms-hospital-downloader-azure" # Change to your repository name
