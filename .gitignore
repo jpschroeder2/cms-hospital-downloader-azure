@@ -9,6 +9,7 @@ infrastructure/.terraform/
 infrastructure/*.tfstate
 infrastructure/*.tfstate.backup
 infrastructure/terraform.tfvars
+infrastructure/.terraform.lock.hcl
 
 # Azure Functions local files
 __blobstorage__/
