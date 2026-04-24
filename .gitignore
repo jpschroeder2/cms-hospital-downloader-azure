@@ -22,5 +22,4 @@ __pycache__/
 
 # OS files
 .DS_Store
-
-README.md
+Thumbs.db
